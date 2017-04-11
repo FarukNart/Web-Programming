@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>JQuery ile Gizle ve Göster Uygulaması</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style>
+	
+*{
+  font-family: Titillium web;
+}
+p{
+  max-width: 500px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px;
+}
+
+
+</style>
+
+
+<script>
+	
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide(500);
+  });
+  $("#show").click(function(){
+    $("p").show(500);
+  });
+});
+
+</script>
+
+</head>
+<body>
+
+<div class="text">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et temporibus adipisci saepe, dolor asperiores nobis veniam necessitatibus? Cupiditate neque asperiores fuga, numquam ex in, maiores doloribus culpa ipsa minus maxime.</p>
+</div>
+<button id="hide">Gizle</button>
+<button id="show">Göster</button>
+
+</body>
+</html>
